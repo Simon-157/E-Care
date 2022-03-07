@@ -466,17 +466,121 @@ section{
 
 
 
+/* media queries  */
+
+@media(max-width:1200px){
+
+    html{
+      font-size: 55%;
+    }
+  
+  }
+  
+  @media(max-width:991px){
+  
+    .header-A,
+    .header-B{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media(max-width:768px){
+  
+    #menu-bar{
+      display: initial;
+    }
+  
+    .header-B .navbar{
+      position: absolute;
+      top:100%; left: 0; right:0;
+      background:var(--black);
+      padding:1rem 2rem;
+      display: none;
+    }
+  
+    .header-B .navbar.active{
+      display: initial;
+    }
+  
+    .header-B .navbar a{
+      font-size: 2.5rem;
+      display: block;
+      text-align: center;
+      background:#fff;
+      padding:1rem;
+      margin:1.5rem 0;
+    }
+  
+    .home .content{
+      text-align: center;
+    }
+  
+    .home .content h3{
+      font-size: 4rem;
+    }
+  
+    .deal{
+      background-position: left;
+    }
+  
+    .deal .content{
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .deal .content .count-down{
+      justify-content: center;
+    }
+  
+    .contact form .inputBox input{
+      width:100%;
+    }
+  
+    .newsletter h3{
+      font-size: 2.2rem;
+    }
+  
+  }
+  
 
 
-
-
-
-
-
-
-
-
-
+  @media(max-width:450px){
+  
+    html{
+      font-size: 50%;
+    }
+  
+    .heading{
+      font-size: 3rem;
+    }
+  
+    .header-A{
+      flex-flow: column;
+    }
+  
+    .header-A .search-box-container{
+      width:100%;
+      margin-top: 2rem;
+    }
+  
+    .logo{
+      font-size: 4rem;
+    }
+  
+    .deal .content .count-down .box h3{
+      font-size: 4rem;
+    }
+  
+    .deal .content .count-down .box span{
+      font-size: 1.5rem;
+    }
+  
+  }
 
 
 
@@ -490,7 +594,23 @@ section{
 }
 
 
+body.dark .header-A{
+	background: #292C35;
+    color: #fff;
+}
+
+
+body.dark .header-B #menu-bar {
+    color: #fff;
+}
+
+
 body.dark {
+	background: #292C35;
+    color: #fff;
+}
+
+body.dark .header-B{
 	background: #292C35;
     color: #fff;
 }
