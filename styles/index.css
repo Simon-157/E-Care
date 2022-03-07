@@ -207,6 +207,56 @@ section{
     width:100%;
 }
 
+
+/* .home .image img:hover{
+    animation: skewK 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    -webkit-animation: skewK 3s infinite;
+    transition: 1s ease-in-out;
+} */
+
+
+.home .image img:hover {
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    transform: translate(3em,0);
+    animation: skewK 3s infinite;
+    transform: skew(20deg);
+    box-shadow:rgba(2, 20, 77, 0.589) 0px 30px 90px;
+}
+
+
+@keyframes skewK {
+    0% {
+      transform: skewX(10deg);
+      -webkit-transform: skewX(10deg);
+      -moz-transform: skewX(10deg);
+      -ms-transform: skewX(10deg);
+      -o-transform: skewX(10deg);
+}
+
+    50%{
+        transform: scale(1.0)    ;
+        -webkit-transform: scale(1.0)    ;
+        -moz-transform: scale(1.0)    ;
+        -ms-transform: scale(1.0)    ;
+        -o-transform: scale(1.0)    ;
+}
+    100% {
+      transform: skewX(-10deg);
+      -webkit-transform: skewX(-10deg);
+      -moz-transform: skewX(-10deg);
+      -ms-transform: skewX(-10deg);
+      -o-transform: skewX(-10deg);
+}
+  }
+  
+
+
+
 .home .content{
   flex:1 1 40rem;
 }
@@ -614,6 +664,16 @@ body.dark .header-B{
 	background: #292C35;
     color: #fff;
 }
+
+body.dark .header-B .navbar a{
+    color: #eee;
+}
+
+body.dark .header-A a{
+    color: #9fcfb2;
+}
+
+
 
 .checkbox {
 	opacity: 0;
