@@ -329,13 +329,14 @@ section{
   }
   
   .product .box-container .box{
-    flex:1 1 30rem;
+    flex:1 1 25rem;
     text-align: center;
-    padding:2rem;
+    padding:1rem;
     border:.1rem solid rgba(0,0,0,.3);
     border-radius: .5rem;
     overflow: hidden;
     position: relative;
+
   }
 
 
@@ -363,7 +364,8 @@ section{
 
   
   .product .box-container .box img{
-    height: 20rem;
+    height: 10rem;
+    width: 10rem;
   }
   
   .product .box-container .box .discount{
@@ -458,5 +460,83 @@ section{
     padding-bottom: 7rem;
   }
   
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Dark Mode set up */
+
+
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body.dark {
+	background: #292C35;
+    color: #fff;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
 
 
